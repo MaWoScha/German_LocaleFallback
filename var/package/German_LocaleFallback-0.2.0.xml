@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>German_LocaleFallback</name>
+    <version>0.2.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>German Modules - LocaleFallback Extension</summary>
+    <description>Complement to language packages for Magento Commerce&#xD;
+* Defines a fallback language additional to the locale&#xD;
+&#xD;
+Erg&#xE4;nzung zu Sprachpaketen f&#xFC;r Magento Commerce:&#xD;
+* Definiert zu der Sprachumgebung eine Ausweichsprache&#xD;
+&#xD;
+Complemento de paquetes de idioma para Magento Commerce&#xD;
+* Definido adem&#xE1;s de la configuraci&#xF3;n regional un idioma de segunda opci&#xF3;n</description>
+    <notes>none/keine</notes>
+    <authors><author><name>Manfred Worm Sch&#xE4;fer</name><user>MaWoScha</user><email>manfredwormschaefer@gmail.com</email></author></authors>
+    <date>2015-02-06</date>
+    <time>23:15:53</time>
+    <contents><target name="magecommunity"><dir name="German"><dir name="LocaleFallback"><dir name="Block"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Fieldset"><file name="ExtensionsList.php" hash="9d1d56db18c46fbde5df70de3bc3036b"/><file name="Instructions.php" hash="cd869ddc3058f6f95d83542ad38922c3"/></dir><file name=".DS_Store" hash="0cf609eb6660a234402d42314522db68"/></dir><file name=".DS_Store" hash="12352d4bf027b0f895185d80df00d8aa"/></dir><file name=".DS_Store" hash="60d450ab59b771a3c283579b2d35d28e"/></dir><file name=".DS_Store" hash="13c47c0f5dc265d0c60feb18896f270c"/></dir><dir name="Helper"><file name="Data.php" hash="eac590ebf5655371f87012bd30d08e02"/></dir><dir name="Model"><file name="Observer.php" hash="de84a68623a5ef8df7500de48a2c8a24"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Locale.php" hash="04ec9720937afe8a654b6e1c1ddb82d1"/></dir><file name=".DS_Store" hash="84808502c88185caecc9457a346ab540"/></dir><file name=".DS_Store" hash="60d450ab59b771a3c283579b2d35d28e"/></dir><file name="Translate.php" hash="8c6c0e676fd84ec0ab2217402bfe682c"/><file name=".DS_Store" hash="13c47c0f5dc265d0c60feb18896f270c"/></dir><dir name="etc"><file name="config.xml" hash="f233e3f3d68df954b65d5148e0ab8f7e"/><file name="system.xml" hash="a9fe8ef55fd3ed0e10b66104cd62de65"/></dir><file name=".DS_Store" hash="af50a4425771801f820d6ded226aa813"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="German_LocaleFallback.xml" hash="396dfe4044ab9ed5c2a2aa43273a3a06"/></dir></target><target name="magelocale"><dir name="de_DE"><file name="German_LocaleFallback.csv" hash="b260aa0b44e74017cf587dd73ce48ce8"/></dir><dir name="en_US"><file name="German_LocaleFallback.csv" hash="150e52ef083f533c20f436813839b929"/></dir><dir name="es_ES"><file name="German_LocaleFallback.csv" hash="24750fdda9b342d3429488bd4d6a65d4"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

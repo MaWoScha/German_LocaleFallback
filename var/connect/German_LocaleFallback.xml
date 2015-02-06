@@ -1,5 +1,5 @@
 <_>
-   <form_key>l2XV8gyADbZNRMcK</form_key>
+   <form_key>aZ66BIug9qsJOky4</form_key>
    <name>German_LocaleFallback</name>
    <channel>community</channel>
    <version_ids>
@@ -17,7 +17,7 @@ Complemento de paquetes de idioma para Magento Commerce
 * Definido además de la configuración regional un idioma de segunda opción</description>
    <license>OSL</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>0.1.0</version>
+   <version>0.2.0</version>
    <stability>stable</stability>
    <notes>none/keine</notes>
    <authors>
@@ -48,7 +48,7 @@ Complemento de paquetes de idioma para Magento Commerce
             <max/>
          </max>
          <files>
-            <files>                                                </files>
+            <files>                                                     </files>
          </files>
       </package>
       <extension>

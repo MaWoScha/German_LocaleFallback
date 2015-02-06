@@ -1,7 +1,7 @@
 <?php
 /**
  * @category  German
- * @package   German_LocalePack
+ * @package   German_LocaleFallback
  * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
  * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
  * @version   0.1.0

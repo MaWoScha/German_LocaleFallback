@@ -3,11 +3,12 @@
 /**
  * @category  German
  * @package   German_LocaleFallback
- * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
- * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
- * @version   0.1.0
+ * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
+ * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
+ * @version   0.2.0
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @source    http://www.magentocommerce.com/wiki/modules_reference/german/klassen
+ * @source    http://github.com/magento-hackathon/Hackathon_LocaleFallback
  */
  -->
 <config>
@@ -57,5 +58,22 @@
                 </extensions>
             </groups>
         </localefallback>
+        <general>
+            <groups>
+                <locale>
+                    <fields>
+                        <code_fallback>
+                            <label>Locale Fallback</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>localefallback/system_config_source_locale</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </code_fallback>
+                    </fields>
+                </locale>
+            </groups>
+        </general>
     </sections>
 </config>

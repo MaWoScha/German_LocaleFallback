@@ -24,3 +24,7 @@ sind es nicht; wenn Sie also einen Eintrag in de_CH nicht finden, schauen Sie in
 v0.1.0
 
 No so much functionality yet, but a framework is done.
+
+v0.2.0
+
+The work of [Hackathon LocaleFallback](https://github.com/magento-hackathon/Hackathon_LocaleFallback) integrated
