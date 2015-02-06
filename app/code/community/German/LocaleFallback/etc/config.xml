@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  German
+ * @package   German_LocaleFallback
+ * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
+ * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @source    http://www.magentocommerce.com/wiki/modules_reference/german/klassen
+ * @source    http://www.alanstorm.com/magento_acl_authentication
+ */
+ -->
+<config>
+    <modules>
+        <German_LocaleFallback>
+            <version>0.1.0</version>
+            <title>Locale Fallback</title>
+        </German_LocaleFallback>
+    </modules>
+
+    <global>
+        <blocks>
+            <localefallback>
+                <class>German_LocaleFallback_Block</class>
+            </localefallback>
+        </blocks>
+        <helpers>
+            <localefallback>
+                <class>German_LocaleFallback_Helper</class>
+            </localefallback>
+        </helpers>
+        <models>
+            <localefallback>
+                <class>German_LocaleFallback_Model</class>
+            </localefallback>
+        </models>
+    </global>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <localefallback>
+                    <file>localefallback.xml</file>
+                </localefallback>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <German_LocaleFallback>
+                    <files>
+                        <default>German_LocaleFallback.csv</default>
+                    </files>
+                </German_LocaleFallback>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <localefallback translate="title" module="localefallback">
+                                            <title>Locale Fallback</title>
+                                        </localefallback>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+</config>

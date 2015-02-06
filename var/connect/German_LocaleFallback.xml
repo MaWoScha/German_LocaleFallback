@@ -1,0 +1,108 @@
+<_>
+   <form_key>l2XV8gyADbZNRMcK</form_key>
+   <name>German_LocaleFallback</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+      <version_ids>1</version_ids>
+   </version_ids>
+   <summary>German Modules - LocaleFallback Extension</summary>
+   <description>Complement to language packages for Magento Commerce
+* Defines a fallback language additional to the locale
+
+Ergänzung zu Sprachpaketen für Magento Commerce:
+* Definiert zu der Sprachumgebung eine Ausweichsprache
+
+Complemento de paquetes de idioma para Magento Commerce
+* Definido además de la configuración regional un idioma de segunda opción</description>
+   <license>OSL</license>
+   <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
+   <version>0.1.0</version>
+   <stability>stable</stability>
+   <notes>none/keine</notes>
+   <authors>
+      <name>
+         <name>Manfred Worm Schäfer</name>
+      </name>
+      <user>
+         <user>MaWoScha</user>
+      </user>
+      <email>
+         <email>manfredwormschaefer@gmail.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.2.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>                                                </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>mageetc</target>
+         <target>magelocale</target>
+         <target>magelocale</target>
+         <target>magelocale</target>
+      </target>
+      <path>
+         <path/>
+         <path>German/LocaleFallback</path>
+         <path>modules/German_LocaleFallback.xml</path>
+         <path>de_DE/German_LocaleFallback.csv</path>
+         <path>en_US/German_LocaleFallback.csv</path>
+         <path>es_ES/German_LocaleFallback.csv</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>file</type>
+         <type>file</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore>.DS_Store</ignore>
+         <ignore>.DS_Store</ignore>
+         <ignore>.DS_Store</ignore>
+         <ignore>.DS_Store</ignore>
+         <ignore>.DS_Store</ignore>
+      </ignore>
+   </contents>
+</_>

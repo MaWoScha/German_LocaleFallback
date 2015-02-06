@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category  German
+ * @package   German_LocaleFallback
+ * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
+ * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
+ * @version   0.1.0
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @source    http://www.magentocommerce.com/wiki/modules_reference/german/klassen
+ */
+ -->
+<config>
+    <tabs>
+        <localepacks translate="label" module="localefallback">
+            <label>Locale Packs</label>
+            <sort_order>150</sort_order>
+        </localepacks>
+    </tabs>
+    	
+    <sections>
+        <localefallback translate="label" module="localefallback">
+            <label>Information</label>
+            <tab>localepacks</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <instructions translate="label comment" module="localefallback">
+                    <label>Instructions</label>
+                    <frontend_type>text</frontend_type>
+                    <frontend_model>localefallback/system_config_form_fieldset_instructions</frontend_model>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                </instructions>
+                <contact translate="label comment" module="localefallback">
+                    <label>Contact</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+					<comment><![CDATA[Please visit us on <a href='https://github.com/MaWoScha' target='_blank'>GitHub</a> for more language packs.<br /><br />You can contact us via <a href='http://blog.siempro.co' target='_blank'>our website</a> or at <a href='mailto:mawoscha@siempro.co' target='_blank'>mawoscha@siempro.co</a>, if you have any question.]]></comment>
+                </contact>
+                <extensions translate="label" module="localefallback">
+                    <label>Installed Language Packs</label>
+                    <frontend_type>text</frontend_type>
+                    <frontend_model>localefallback/system_config_form_fieldset_extensionslist</frontend_model>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+					<comment><![CDATA[You have installed the following:]]></comment>
+                </extensions>
+            </groups>
+        </localefallback>
+    </sections>
+</config>

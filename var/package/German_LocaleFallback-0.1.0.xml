@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>German_LocaleFallback</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>German Modules - LocaleFallback Extension</summary>
+    <description>Complement to language packages for Magento Commerce&#xD;
+* Defines a fallback language additional to the locale&#xD;
+&#xD;
+Erg&#xE4;nzung zu Sprachpaketen f&#xFC;r Magento Commerce:&#xD;
+* Definiert zu der Sprachumgebung eine Ausweichsprache&#xD;
+&#xD;
+Complemento de paquetes de idioma para Magento Commerce&#xD;
+* Definido adem&#xE1;s de la configuraci&#xF3;n regional un idioma de segunda opci&#xF3;n</description>
+    <notes>none/keine</notes>
+    <authors><author><name>Manfred Worm Sch&#xE4;fer</name><user>MaWoScha</user><email>manfredwormschaefer@gmail.com</email></author></authors>
+    <date>2015-02-06</date>
+    <time>19:55:54</time>
+    <contents><target name="magecommunity"><dir name="German"><dir name="LocaleFallback"><dir name="Block"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Fieldset"><file name="ExtensionsList.php" hash="9d1d56db18c46fbde5df70de3bc3036b"/><file name="Instructions.php" hash="d27940f07ed519202ba81908bbe9d6c0"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="eac590ebf5655371f87012bd30d08e02"/></dir><dir name="Model"><file name="Observer.php" hash="cd08771432d76e9b3118bc4a5a9cb486"/></dir><dir name="etc"><file name="config.xml" hash="20f18fc0f3e7cad5dbcd1eab8048eabb"/><file name="system.xml" hash="e9c078cd50454dfe0662aaaef05fa6bf"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="German_LocaleFallback.xml" hash="3437382f5ccd13636d78def29eb4f9dd"/></dir></target><target name="magelocale"><dir name="de_DE"><file name="German_LocaleFallback.csv" hash="155a13d6565b17ba815708507c3acd15"/></dir><dir name="en_US"><file name="German_LocaleFallback.csv" hash="8ec2b230d4e5bea868545d6840408b89"/></dir><dir name="es_ES"><file name="German_LocaleFallback.csv" hash="d01b180fb29c04b90a3c992e98e9fa55"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

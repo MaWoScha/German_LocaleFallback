@@ -1,0 +1,6 @@
+#BackendModule
+app/code/community/German/LocaleFallback app/code/community/German/LocaleFallback
+app/etc/modules/German_LocaleFallback.xml app/etc/modules/German_LocaleFallback.xml
+app/locale/de_DE/German_LocaleFallback.csv app/locale/de_DE/German_LocaleFallback.csv
+app/locale/en_US/German_LocaleFallback.csv app/locale/en_US/German_LocaleFallback.csv
+app/locale/es_ES/German_LocaleFallback.csv app/locale/es_ES/German_LocaleFallback.csv
