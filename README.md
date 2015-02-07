@@ -35,7 +35,6 @@ Add some configuration stuff.
 
 Now you can individually expand the list of locales and fallbacks.
 
-
-Einige Einstellm�glichkeiten wurden ergänzt.
+Einige Einstellmöglichkeiten wurden ergänzt.
 
 Nun können Sie individuell die Liste der Sprachumgebungen und Ausweichsprachen erweitern.
