@@ -28,3 +28,14 @@ No so much functionality yet, but a framework is done.
 v0.2.0
 
 The work of [Hackathon LocaleFallback](https://github.com/magento-hackathon/Hackathon_LocaleFallback) integrated
+
+v0.3.0
+
+Add some configuration stuff.
+
+Now you can individually expand the list of locales and fallbacks.
+
+
+Einige Einstellm�glichkeiten wurden ergänzt.
+
+Nun können Sie individuell die Liste der Sprachumgebungen und Ausweichsprachen erweitern.

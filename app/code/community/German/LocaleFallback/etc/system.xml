@@ -5,7 +5,7 @@
  * @package   German_LocaleFallback
  * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
  * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
- * @version   0.2.0
+ * @version   0.3.0
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @source    http://www.magentocommerce.com/wiki/modules_reference/german/klassen
  * @source    http://github.com/magento-hackathon/Hackathon_LocaleFallback
@@ -37,10 +37,37 @@
                     <show_in_website>0</show_in_website>
                     <show_in_store>0</show_in_store>
                 </instructions>
+				<extra_locales translate="label" module="localefallback">
+					<label>Extra locales</label>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<extra_locale_list translate="localefallback">
+							<label>Locale list</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+							<comment>You can type in here more locales, comma-separated, like "de_LU,en_IN,en_ZA,es_CU,fr_BE,ur_PK".</comment>
+						</extra_locale_list>
+						<extra_fallback_list translate="localefallback">
+							<label>Fallback list</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+							<comment>You can type in here more fallback languages, comma-separated, like "ar,en,ur".</comment>
+						</extra_fallback_list>
+					</fields> 
+				</extra_locales> 
                 <contact translate="label comment" module="localefallback">
                     <label>Contact</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>20</sort_order>
+                    <sort_order>30</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>0</show_in_website>
                     <show_in_store>0</show_in_store>
@@ -50,7 +77,7 @@
                     <label>Installed Language Packs</label>
                     <frontend_type>text</frontend_type>
                     <frontend_model>localefallback/system_config_form_fieldset_extensionslist</frontend_model>
-                    <sort_order>30</sort_order>
+                    <sort_order>40</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>0</show_in_website>
                     <show_in_store>0</show_in_store>

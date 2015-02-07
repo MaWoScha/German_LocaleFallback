@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>German_LocaleFallback</name>
+    <version>0.3.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>German Modules - LocaleFallback Extension</summary>
+    <description>Complement to language packages for Magento Commerce&#xD;
+* Defines a fallback language additional to the locale&#xD;
+&#xD;
+Erg&#xE4;nzung zu Sprachpaketen f&#xFC;r Magento Commerce:&#xD;
+* Definiert zu der Sprachumgebung eine Ausweichsprache&#xD;
+&#xD;
+Complemento de paquetes de idioma para Magento Commerce&#xD;
+* Definido adem&#xE1;s de la configuraci&#xF3;n regional un idioma de segunda opci&#xF3;n</description>
+    <notes>none/keine</notes>
+    <authors><author><name>Manfred Worm Sch&#xE4;fer</name><user>MaWoScha</user><email>manfredwormschaefer@gmail.com</email></author></authors>
+    <date>2015-02-07</date>
+    <time>02:53:23</time>
+    <contents><target name="magecommunity"><dir name="German"><dir name="LocaleFallback"><dir name="Block"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Fieldset"><file name="ExtensionsList.php" hash="9d1d56db18c46fbde5df70de3bc3036b"/><file name="Instructions.php" hash="98acf4ab467a1c2e15cd003d0437aa5a"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="eac590ebf5655371f87012bd30d08e02"/></dir><dir name="Model"><file name="Locale.php" hash="5debdbbbb0cc94f06b47b10e2fe004f1"/><file name="Observer.php" hash="de84a68623a5ef8df7500de48a2c8a24"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Locale.php" hash="b439541975e08f67282f3dff40770aaa"/></dir></dir></dir><file name="Translate.php" hash="8c6c0e676fd84ec0ab2217402bfe682c"/></dir><dir name="etc"><file name="config.xml" hash="244e631ee97488308e2b12fd781299c4"/><file name="system.xml" hash="19b94edac1421f18498b31927b2a2a4f"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="German_LocaleFallback.xml" hash="396dfe4044ab9ed5c2a2aa43273a3a06"/></dir></target><target name="magelocale"><dir name="de_DE"><file name="German_LocaleFallback.csv" hash="c59776e0b8cee6d3f8ecd635f605b255"/></dir><dir name="en_US"><file name="German_LocaleFallback.csv" hash="8de86f459b91a64dbafdf7ba900c2d98"/></dir><dir name="es_ES"><file name="German_LocaleFallback.csv" hash="9cc9103487266b0a6b6078756528611f"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

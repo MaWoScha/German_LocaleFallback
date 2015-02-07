@@ -14,12 +14,6 @@ class German_LocaleFallback_Block_System_Config_Form_Fieldset_Instructions
     {
         $helper = Mage::helper("localefallback");
         $html  = $this->_getHeaderHtml($element);
-        $html .= "<p><strong>";
-        $html .= $helper->__("The <span style='color:red'>%s</span> language pack in version <span style='color:red'>%s</span> has been successfully installed.",
-        		(string)Mage::app()->getConfig()->getNode('modules/German_LocalePackEn/lang'),
-        		(string)Mage::app()->getConfig()->getNode('modules/German_LocalePackEn/version'));
-        $html .= "</strong></p>";
-
         $html .= "<p>";
 		$html .= $helper->__("Magento has only one variable available for the locale (<a href='%s'>locale</a>). This extension now provides two settings:",
         		Mage::helper('adminhtml')->getUrl('adminhtml/system_config/edit', array('section'=>'general')));
