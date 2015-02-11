@@ -13,8 +13,9 @@
 <config>
     <modules>
         <German_LocaleFallback>
-            <version>0.3.0</version>
+            <version>0.3.1</version>
             <title>Locale Fallback</title>
+            <link_git>https://github.com/MaWoScha/German_LocaleFallback</link_git>
         </German_LocaleFallback>
     </modules>
 
@@ -43,12 +44,22 @@
                 </rewrite>
             </core>
         </models>
+        <template>
+            <email>
+                <design_email_support translate="label" module="core">
+                    <label>Email - Support</label>
+                    <file>html/support.html</file>
+                    <type>text</type>
+                </design_email_support>
+            </email>
+        </template>
     </global>
+
 	<default>
 		<localefallback>
 			<extra_locales>
-				<extra_locale_list><![CDATA[ar_YE,de_LU,en_BZ,en_GY,en_HK,en_IN,en_ZA,es_CU,fr_BE,fr_CH,fr_DZ,fr_GY,fr_LU,fr_PF,fr_SN,pt_MZ,ur_IN,ur_PK]]></extra_locale_list>
-				<extra_fallback_list><![CDATA[ar,en,ur]]></extra_fallback_list>
+				<extra_locale_list>ar_YE,de_LU,en_BZ,en_GY,en_HK,en_IN,en_ZA,es_CU,fr_BE,fr_CH,fr_DZ,fr_GY,fr_LU,fr_PF,fr_SN,pt_MZ,ur_IN,ur_PK</extra_locale_list>
+				<extra_fallback_list>ar,en,ur</extra_fallback_list>
 			</extra_locales>
 		</localefallback>
 	</default>
