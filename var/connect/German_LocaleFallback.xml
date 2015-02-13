@@ -1,10 +1,9 @@
 <_>
-   <form_key>aZ66BIug9qsJOky4</form_key>
+   <form_key></form_key>
    <name>German_LocaleFallback</name>
    <channel>community</channel>
    <version_ids>
       <version_ids>2</version_ids>
-      <version_ids>1</version_ids>
    </version_ids>
    <summary>German Modules - LocaleFallback Extension</summary>
    <description>Complement to language packages for Magento Commerce
@@ -17,7 +16,7 @@ Complemento de paquetes de idioma para Magento Commerce
 * Definido además de la configuración regional un idioma de segunda opción</description>
    <license>OSL</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>0.3.1</version>
+   <version>0.3.2</version>
    <stability>stable</stability>
    <notes>none/keine</notes>
    <authors>
@@ -71,6 +70,8 @@ Complemento de paquetes de idioma para Magento Commerce
          <target>magelocale</target>
          <target>magelocale</target>
          <target>magelocale</target>
+         <target>magelocale</target>
+         <target>magelocale</target>
       </target>
       <path>
          <path/>
@@ -79,10 +80,14 @@ Complemento de paquetes de idioma para Magento Commerce
          <path>de_DE/German_LocaleFallback.csv</path>
          <path>en_US/German_LocaleFallback.csv</path>
          <path>es_ES/German_LocaleFallback.csv</path>
+         <path>fr_FR/German_LocaleFallback.csv</path>
+         <path>pt_PT/German_LocaleFallback.csv</path>
       </path>
       <type>
          <type>file</type>
          <type>dir</type>
+         <type>file</type>
+         <type>file</type>
          <type>file</type>
          <type>file</type>
          <type>file</type>
@@ -95,9 +100,13 @@ Complemento de paquetes de idioma para Magento Commerce
          <include/>
          <include/>
          <include/>
+         <include/>
+         <include/>
       </include>
       <ignore>
          <ignore/>
+         <ignore>#^.DS_Store#</ignore>
+         <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
          <ignore>#^.DS_Store#</ignore>
