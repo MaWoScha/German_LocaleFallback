@@ -1,8 +1,16 @@
 {
-    "name": "magento-german/localefallback",
+    "name": "mawoscha/german-localefallback",
     "license": "OSL-3.0",
     "type": "magento-module",
     "description": "Allows a fallback for locales (translations, emails etc.)",
+    "authors":[
+        {
+            "name":"Bastian Ike"
+        },
+        {
+            "name":"MaWoScha"
+        }
+    ],
     "homepage": "https://github.com/MaWoScha/German_LocaleFallback",
     "require": {
         "magento-german/magento-composer-installer": "*"

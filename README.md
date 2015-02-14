@@ -38,3 +38,9 @@ Now you can individually expand the list of locales and fallbacks.
 Einige Einstellmöglichkeiten wurden ergänzt.
 
 Nun können Sie individuell die Liste der Sprachumgebungen und Ausweichsprachen erweitern.
+
+v0.4.0
+
+The fallback locale has now also effect on email templates.
+
+Die Ausweichsprache greift nun auch bei den E-Mail-Vorlagen.
