@@ -13,6 +13,6 @@
     ],
     "homepage": "https://github.com/MaWoScha/German_LocaleFallback",
     "require": {
-        "magento-german/magento-composer-installer": "*"
+        "magento-hackathon/magento-composer-installer": "*"
     }
 }

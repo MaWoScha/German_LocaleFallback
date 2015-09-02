@@ -44,3 +44,10 @@ v0.4.0
 The fallback locale has now also effect on email templates.
 
 Die Ausweichsprache greift nun auch bei den E-Mail-Vorlagen.
+
+v0.4.1
+
+Fix incorrect loading of theme translation. Sets the global locale to fallback locale to be able to retrieve the correct path to the themes translate.csv in Mage_Core_Model_Design_Package::getLocaleBaseDir()
+
+Provided by access3000:
+ https://github.com/access3000/Hackathon_LocaleFallback/commit/b011bf1e0ea60341c7fe685c37ce4d65545aa842
