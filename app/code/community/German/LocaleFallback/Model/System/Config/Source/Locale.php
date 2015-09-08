@@ -30,7 +30,7 @@ class German_LocaleFallback_Model_System_Config_Source_Locale
 			$_more_Languages = str_replace(";", ",", $_more_Languages); // only Comma Not Semicolon
 			$_more_Languages = explode( ',', $_more_Languages );
 
-			$languages = Mage::app()->getLocale()->getTranslationList('language', Mage::app()->getLocale());
+			$languages = Mage::app()->getLocale()->getTranslationList('language', Mage::app()->getLocale()->getLocaleCode());
 			$countries = Mage::app()->getLocale()->getCountryTranslationList();
 
 			foreach ($_more_Languages as $code_lang) {
