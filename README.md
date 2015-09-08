@@ -50,4 +50,11 @@ v0.4.1
 Fix incorrect loading of theme translation. Sets the global locale to fallback locale to be able to retrieve the correct path to the themes translate.csv in Mage_Core_Model_Design_Package::getLocaleBaseDir()
 
 Provided by access3000:
- https://github.com/access3000/Hackathon_LocaleFallback/commit/b011bf1e0ea60341c7fe685c37ce4d65545aa842
+* https://github.com/access3000/Hackathon_LocaleFallback/commit/b011bf1e0ea60341c7fe685c37ce4d65545aa842
+
+v0.4.2
+
+Small fix in "etc/system.xml"
+
+Prevent locale fallback in backend, provided by diglin:
+* https://github.com/MaWoScha/German_LocaleFallback/commit/0a8421bcc4a1910adeec18f1987596429c5fb7a0
