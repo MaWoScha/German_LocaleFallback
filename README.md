@@ -57,4 +57,15 @@ v0.4.2
 Small fix in "etc/system.xml"
 
 Prevent locale fallback in backend, provided by diglin:
-* https://github.com/MaWoScha/German_LocaleFallback/commit/0a8421bcc4a1910adeec18f1987596429c5fb7a0
+* https://github.com/diglin/German_LocaleFallback/commit/0a8421bcc4a1910adeec18f1987596429c5fb7a0
+
+v0.4.3
+
+Die Datei
+* var/package/Delete_EmailTemplates_en_US-1.0.0.xml
+erlaubt die vorinstallierten englischsprachigen E-Mail-Vorlagen über den "Magento Connect Manager" zu löschen und
+*  [German LocalePack en_US](https://github.com/MaWoScha/German_LocalePack_en_US)
+ohne Rückgriff auf FTP oder Dateimanager zu installieren.
+
+Fix issue with string expected but object is return from getlocale, provided by diglin:
+* https://github.com/diglin/German_LocaleFallback/commit/38c2654cbc3e66bdd9db6035cc8d56ff991ce613

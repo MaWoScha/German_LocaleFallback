@@ -4,7 +4,7 @@
  * @package   German_LocaleFallback
  * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
  * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
- * @version   0.3.0
+ * @version   0.4.0
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @source    http://github.com/magento-hackathon/Hackathon_LocaleFallback
  */
@@ -30,7 +30,7 @@ class German_LocaleFallback_Model_System_Config_Source_Locale
 			$_more_Languages = str_replace(";", ",", $_more_Languages); // only Comma Not Semicolon
 			$_more_Languages = explode( ',', $_more_Languages );
 
-			$languages = Mage::app()->getLocale()->getTranslationList('language', Mage::app()->getLocale());
+			$languages = Mage::app()->getLocale()->getTranslationList('language', Mage::app()->getLocale()->getLocaleCode());
 			$countries = Mage::app()->getLocale()->getCountryTranslationList();
 
 			foreach ($_more_Languages as $code_lang) {
