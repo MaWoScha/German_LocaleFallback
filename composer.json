@@ -1,18 +1,37 @@
 {
-    "name": "mawoscha/german-localefallback",
-    "license": "OSL-3.0",
-    "type": "magento-module",
-    "description": "Allows a fallback for locales (translations, emails etc.)",
-    "authors":[
-        {
-            "name":"Bastian Ike"
-        },
-        {
-            "name":"MaWoScha"
-        }
-    ],
-    "homepage": "https://github.com/MaWoScha/German_LocaleFallback",
-    "require": {
-        "magento-hackathon/magento-composer-installer": "*"
+  "name": "mawoscha/german-localefallback",
+  "license": "OSL-3.0",
+  "type": "magento-module",
+  "description": "Allows a fallback for locales (translations, emails etc.)",
+  "authors":[
+    {
+      "name":"Bastian Ike"
+    },
+    {
+      "name":"MaWoScha"
+    },
+    {
+      "name":"Henry Hirsch"
     }
+  ],
+  "homepage": "https://github.com/MaWoScha/German_LocaleFallback",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "extra": {
+    "magento-root-dir": "./",
+    "magento-deploystrategy": "copy",
+    "map": [
+      ["./app/etc/modules/German_LocaleFallback.xml", "./app/etc/modules/German_LocaleFallback.xml"],
+      ["./app/locale/es_ES/German_LocaleFallback.csv", "./app/locale/es_ES/German_LocaleFallback.csv"],
+      ["./app/locale/de_DE/German_LocaleFallback.csv", "./app/locale/de_DE/German_LocaleFallback.csv"],
+      ["./app/locale/en_US/German_LocaleFallback.csv", "./app/locale/en_US/German_LocaleFallback.csv"],
+      ["./app/locale/pt_PT/German_LocaleFallback.csv", "./app/locale/pt_PT/German_LocaleFallback.csv"],
+      ["./app/locale/fr_FR/German_LocaleFallback.csv", "./app/locale/fr_FR/German_LocaleFallback.csv"],
+      ["./app/code/community/German/LocaleFallback", "./app/code/community/German/LocaleFallback"]
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
 }
