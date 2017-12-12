@@ -49,15 +49,13 @@ v0.4.1
 
 Fix incorrect loading of theme translation. Sets the global locale to fallback locale to be able to retrieve the correct path to the themes translate.csv in Mage_Core_Model_Design_Package::getLocaleBaseDir()
 
-Provided by access3000:
-* https://github.com/access3000/Hackathon_LocaleFallback/commit/b011bf1e0ea60341c7fe685c37ce4d65545aa842
+Provided by [access3000] (https://github.com/access3000/Hackathon_LocaleFallback/commit/b011bf1e0ea60341c7fe685c37ce4d65545aa842)
 
 v0.4.2
 
 Small fix in "etc/system.xml"
 
-Prevent locale fallback in backend, provided by diglin:
-* https://github.com/diglin/German_LocaleFallback/commit/0a8421bcc4a1910adeec18f1987596429c5fb7a0
+Prevent locale fallback in backend, provided by [diglin] (https://github.com/diglin/German_LocaleFallback/commit/0a8421bcc4a1910adeec18f1987596429c5fb7a0)
 
 v0.4.3
 
@@ -67,5 +65,14 @@ erlaubt die vorinstallierten englischsprachigen E-Mail-Vorlagen über den "Magen
 *  [German LocalePack en_US](https://github.com/MaWoScha/German_LocalePack_en_US)
 ohne Rückgriff auf FTP oder Dateimanager zu installieren.
 
-Fix issue with string expected but object is return from getlocale, provided by diglin:
-* https://github.com/diglin/German_LocaleFallback/commit/38c2654cbc3e66bdd9db6035cc8d56ff991ce613
+Fix issue with string expected but object is return from getlocale, provided by [diglin] (https://github.com/diglin/German_LocaleFallback/commit/38c2654cbc3e66bdd9db6035cc8d56ff991ce613)
+
+v0.4.4
+
+Übersetzung für "Email Support Template" ergänzt.
+
+v0.4.5
+
+Die Datei "var/package/Delete_EmailTemplates_en_US-1.2.0.xml" berücksichtigt zusätzlich dazugekommene englischsprachige E-Mail-Vorlagen
+
+Italienische Lokalisierung hinzugefügt.

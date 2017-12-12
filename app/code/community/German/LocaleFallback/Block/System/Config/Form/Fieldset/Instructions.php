@@ -4,7 +4,7 @@
  * @package   German_LocaleFallback
  * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
  * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>
- * @version   0.3.1
+ * @version   0.4.5
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 class German_LocaleFallback_Block_System_Config_Form_Fieldset_Instructions
@@ -13,6 +13,7 @@ class German_LocaleFallback_Block_System_Config_Form_Fieldset_Instructions
     public function render(Varien_Data_Form_Element_Abstract $element)
     {
         $helper = Mage::helper("localefallback");
+
         $html  = $this->_getHeaderHtml($element);
         $html .= "<p>";
 		$html .= $helper->__("Magento has only one variable available for the locale (<a href='%s'>locale</a>). This extension now provides two settings:",
@@ -42,7 +43,7 @@ class German_LocaleFallback_Block_System_Config_Form_Fieldset_Instructions
         		Mage::helper('adminhtml')->getUrl('adminhtml/cms_block'));
         $html .= "</p>";
         $html .= "<p style='text-align:right;'>";
-		$html .= $helper->__("powered by")." <a href='http://blog.siempro.co/' target='_blank'>MaWoScha</a>";
+		$html .= $helper->__("powered by")." <a href='https://github.com/mawoscha/German_LocaleFallback' target='_blank'>MaWoScha</a>";
         $html .= "</p>";
         $html .= $this->_getFooterHtml($element);
 

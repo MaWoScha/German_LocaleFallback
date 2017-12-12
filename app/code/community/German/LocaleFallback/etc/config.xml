@@ -13,7 +13,7 @@
 <config>
     <modules>
         <German_LocaleFallback>
-            <version>0.4.4</version>
+            <version>0.4.5</version>
             <title>Locale Fallback</title>
             <link_git>https://github.com/MaWoScha/German_LocaleFallback</link_git>
         </German_LocaleFallback>

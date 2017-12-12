@@ -25,6 +25,7 @@
       ["./app/locale/en_US/German_LocaleFallback.csv", "./app/locale/en_US/German_LocaleFallback.csv"],
       ["./app/locale/es_ES/German_LocaleFallback.csv", "./app/locale/es_ES/German_LocaleFallback.csv"],
       ["./app/locale/fr_FR/German_LocaleFallback.csv", "./app/locale/fr_FR/German_LocaleFallback.csv"],
+      ["./app/locale/it_IT/German_LocaleFallback.csv", "./app/locale/it_IT/German_LocaleFallback.csv"],
       ["./app/locale/pt_PT/German_LocaleFallback.csv", "./app/locale/pt_PT/German_LocaleFallback.csv"]
     ]
   },
