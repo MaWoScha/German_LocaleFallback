@@ -73,6 +73,13 @@ v0.4.4
 
 v0.4.5
 
-Die Datei "var/package/Delete_EmailTemplates_en_US-1.2.0.xml" berücksichtigt zusätzlich dazugekommene englischsprachige E-Mail-Vorlagen
+- Die Datei "var/package/Delete_EmailTemplates_en_US-1.2.0.xml" berücksichtigt zusätzlich dazugekommene englischsprachige E-Mail-Vorlagen.
+- Italienische Lokalisierung hinzugefügt.
 
-Italienische Lokalisierung hinzugefügt.
+v0.5.0
+
+Setting options expanded.
+- The idea is to have custom language packs that have only a few entries in addition to the main package (eg de_DE) and are therefore easy to maintain and to include via the locale "de_ZZ", "en_ZZ", "es_ZZ", "fr_ZZ" and so on.
+
+Einstellungsmöglichkeiten erweitert.
+- Die Idee ist, kundenspezifische Sprachpakete zu haben, die neben dem Hauptpaket (bsp. de_DE) nur wenige Einträge haben und deshalb leicht zu warten sind und über die locale "de_ZZ", "en_ZZ", "es_ZZ", "fr_ZZ und so weiter einzubinden sind.

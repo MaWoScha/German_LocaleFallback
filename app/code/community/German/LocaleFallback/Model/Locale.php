@@ -43,17 +43,19 @@ class German_LocaleFallback_Model_Locale extends Mage_Core_Model_Locale
             * pt_MZ: Portugiesisch in Mozambique
             * ur_IN: Urdu in Indien
             * ur_PK: Urdu in Pakistan
-            $_more_locales = array('ar_YE','de_LU','en_BZ','en_GY','en_HK','en_IN','en_ZA','es_CU','fr_BE','fr_CH','fr_DZ','fr_GY','fr_LU','fr_PF','fr_SN','pt_MZ','ur_IN','ur_PK');
+            *
+            * $_more_locales = array('ar_YE','de_LU','en_BZ','en_GY','en_HK','en_IN','en_ZA','es_CU','fr_BE','fr_CH','fr_DZ','fr_GY','fr_LU','fr_PF','fr_SN','pt_MZ','ur_IN','ur_PK');
             * Ersetzt durch das Konfigurationsfeld "localefallback/extra_locales/extra_locale_list"
             */
             $extra_locales = Mage::getStoreConfig('localefallback/extra_locales/extra_locale_list');
+
             if (!empty ( $extra_locales ) ) {
-				$extra_locales = str_replace(";", ",", $extra_locales); // only Comma Not Semicolon
-				$_more_locales = explode( ',', $extra_locales );
-				$this->_locales = array_merge($_mage_locales,$_more_locales);
-			} else {
-				$this->_locales = $_mage_locales;
-			}
+                $extra_locales = str_replace(";", ",", $extra_locales); // only Comma Not Semicolon
+                $_more_locales = explode( ',', $extra_locales );
+                $this->_locales = array_merge($_mage_locales,$_more_locales);
+            } else {
+                $this->_locales = $_mage_locales;
+            }
         }
 
         return $this->_locales;

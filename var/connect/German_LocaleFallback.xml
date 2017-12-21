@@ -16,7 +16,7 @@ Complemento de paquetes de idioma para Magento Commerce
 * Definido además de la configuración regional un idioma de segunda opción</description>
    <license>OSL</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>0.4.5</version>
+   <version>0.5.0</version>
    <stability>stable</stability>
    <notes>none/keine</notes>
    <authors>

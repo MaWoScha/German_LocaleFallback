@@ -13,7 +13,7 @@
 <config>
     <modules>
         <German_LocaleFallback>
-            <version>0.4.5</version>
+            <version>0.5.0</version>
             <title>Locale Fallback</title>
             <link_git>https://github.com/MaWoScha/German_LocaleFallback</link_git>
         </German_LocaleFallback>
@@ -38,7 +38,7 @@
                 <rewrite>
                 	<!-- In den Tags steht das (Mage-)Modul, das ueberschrieben wird;
                 	   zwischen den Tags steht die ueberschreibende Klasse.
-                	   Hier: Mage_Core_Model_Language, ergibt Tag: language -->
+                	   Hier: Mage_Core_Model_Locale, ergibt Tag: locale -->
                     <locale>German_LocaleFallback_Model_Locale</locale>
                     <translate>German_LocaleFallback_Model_Translate</translate>
                 </rewrite>
@@ -59,7 +59,7 @@
 		<localefallback>
 			<extra_locales>
 				<extra_locale_list>ar_YE,de_LU,en_BZ,en_GY,en_HK,en_IN,en_ZA,es_CU,fr_BE,fr_CH,fr_DZ,fr_GY,fr_LU,fr_PF,fr_SN,pt_MZ,ur_IN,ur_PK</extra_locale_list>
-				<extra_fallback_list>ar,en,ur</extra_fallback_list>
+				<extra_fallback_list>ar,en</extra_fallback_list>
 			</extra_locales>
 		</localefallback>
 	</default>

@@ -4,7 +4,7 @@
  * @package   German_LocaleFallback
  * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
  * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
- * @version   0.4.1
+ * @version   0.5.0
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @source    http://github.com/magento-hackathon/Hackathon_LocaleFallback
  * @source    http://github.com/access3000/Hackathon_LocaleFallback
@@ -40,7 +40,7 @@ class German_LocaleFallback_Model_Translate extends Mage_Core_Model_Translate
      * @param bool $forceReload
      * @return German_LocaleFallback_Model_Translate
      */
-    protected function _loadGettextModuleTranslation($moduleName, $files, $forceReload=false)
+    protected function _loadGettextModuleTranslation($moduleName, $files, $forceReload = false)
     {
         foreach ($files as $file) {
             $temp = pathinfo($file, PATHINFO_EXTENSION);
@@ -85,7 +85,7 @@ class German_LocaleFallback_Model_Translate extends Mage_Core_Model_Translate
         $this->setConfig(array(self::CONFIG_KEY_AREA => $area));
 
         $this->_translateInline = Mage::getSingleton('core/translate_inline')
-            ->isAllowed($area=='adminhtml' ? 'admin' : null);
+            ->isAllowed($area == 'adminhtml' ? 'admin' : null);
 
         if (!$forceReload) {
             if ($this->_canUseCache()) {
@@ -99,15 +99,25 @@ class German_LocaleFallback_Model_Translate extends Mage_Core_Model_Translate
 
         $this->_data = array();
 
-		/** START - Bastian Ike */
-        if (!Mage::app()->getStore()->isAdmin() && $localeFallback = Mage::getStoreConfig('general/locale/code_fallback')) {
+        /** START - MaWoScha */
+        $localePreferred = Mage::getStoreConfig('general/locale/code');
+        $localeFallback  = Mage::getStoreConfig('general/locale/code_fallback');
+        $localeCustom = '';
+        if (strstr($localePreferred, '_')) {
+            $data = explode('_', $localePreferred);
+            $localeCustom = $data[0] . '_ZZ';
+        }
+        /** END - MaWoScha */
+
+        /** START - Bastian Ike */
+        if (!Mage::app()->getStore()->isAdmin() && !empty($localeFallback)) {
             // save original locale
             $tmp_locale_original = $this->getLocale();
 
             // set locale fallback
             $this->setLocale($localeFallback);
             // set global locale to fallback locale
-            Mage::getSingleton('core/locale')->setLocale($localeFallback);	/* by access3000 */
+            Mage::getSingleton('core/locale')->setLocale($localeFallback);    /* by access3000 */
 
             // load translations as usual
             foreach ($this->getModulesConfig() as $moduleName => $info) {
@@ -123,18 +133,46 @@ class German_LocaleFallback_Model_Translate extends Mage_Core_Model_Translate
             // restore original locale
             $this->setLocale($tmp_locale_original);
             // restore global original locale
-            Mage::getSingleton('core/locale')->setLocale($tmp_locale_original);	/* by access3000 */
+            Mage::getSingleton('core/locale')->setLocale($tmp_locale_original);    /* by access3000 */
         }
-		/** END - Bastian Ike */
+        /** END - Bastian Ike */
 
         foreach ($this->getModulesConfig() as $moduleName => $info) {
             $info = $info->asArray();
             $this->_loadModuleTranslation($moduleName, $info['files'], $forceReload);
-            $this->_loadGettextModuleTranslation($moduleName, $info['files'], $forceReload);	/* Bastian Ike */
+            $this->_loadGettextModuleTranslation($moduleName, $info['files'], $forceReload);    /* Bastian Ike */
         }
 
+        /** START - MaWoScha */
+        if (!empty($localeCustom)) {
+            // save original locale
+            $tmp_locale_original = $this->getLocale();
+
+            // set locale fallback
+            $this->setLocale($localeCustom);
+            // set global locale to fallback locale
+            Mage::getSingleton('core/locale')->setLocale($localeCustom);
+
+            // load translations as usual
+            foreach ($this->getModulesConfig() as $moduleName => $info) {
+                $info = $info->asArray();
+                $this->_loadModuleTranslation($moduleName, $info['files'], $forceReload);
+                $this->_loadGettextModuleTranslation($moduleName, $info['files'], $forceReload);
+            }
+
+            $this->_loadThemeTranslation($forceReload);
+            $this->_loadGettextTranslation($forceReload);
+            $this->_loadDbTranslation($forceReload);
+
+            // restore original locale
+            $this->setLocale($tmp_locale_original);
+            // restore global original locale
+            Mage::getSingleton('core/locale')->setLocale($tmp_locale_original);
+        }
+        /** END - MaWoScha */
+
         $this->_loadThemeTranslation($forceReload);
-        $this->_loadGettextTranslation($forceReload);	/* Bastian Ike */
+        $this->_loadGettextTranslation($forceReload);    /* Bastian Ike */
         $this->_loadDbTranslation($forceReload);
 
         if (!$forceReload && $this->_canUseCache()) {
@@ -154,22 +192,22 @@ class German_LocaleFallback_Model_Translate extends Mage_Core_Model_Translate
      * @param string $localeCode
      * @return string
      */
-    public function getTemplateFile($file, $type, $localeCode=null)
+    public function getTemplateFile($file, $type, $localeCode = null)
     {
         if (is_null($localeCode) || preg_match('/[^a-zA-Z_]/', $localeCode)) {
             $localeCode = $this->getLocale();
         }
 
-        $filePath = Mage::getBaseDir('locale')  . DS
+        $filePath = Mage::getBaseDir('locale') . DS
                   . $localeCode . DS . 'template' . DS . $type . DS . $file;
 
-		/** START - MaWoScha */
+        /** START - MaWoScha */
         if (!file_exists($filePath)) { // If template doesn't exist for this locale, use fallback locale
             $filePath = Mage::getBaseDir('locale') . DS
                       . Mage::getStoreConfig('general/locale/code_fallback')
                       . DS . 'template' . DS . $type . DS . $file;
         }
-		/** END - MaWoScha */
+        /** END - MaWoScha */
 
         if (!file_exists($filePath)) { // If template doesn't exist for fallback locale, use store default
             $filePath = Mage::getBaseDir('locale') . DS
@@ -205,7 +243,7 @@ class German_LocaleFallback_Model_Translate extends Mage_Core_Model_Translate
         $tmp_locale_original = $this->getLocale();
 
         $this->setLocale($locale);
-        Mage::getSingleton('core/locale')->setLocale($locale);	/* by access3000 */
+        Mage::getSingleton('core/locale')->setLocale($locale);    /* by access3000 */
 
         $this->_data = array();
         foreach ($this->getModulesConfig() as $moduleName => $info) {
@@ -218,9 +256,9 @@ class German_LocaleFallback_Model_Translate extends Mage_Core_Model_Translate
         $this->_loadDbTranslation(false);
 
         // restore original locale
-        $this->setLocale($tmp_locale_original);	/* by access3000 */
+        $this->setLocale($tmp_locale_original);    /* by access3000 */
         // restore global original locale
-        Mage::getSingleton('core/locale')->setLocale($tmp_locale_original);	/* by access3000 */
+        Mage::getSingleton('core/locale')->setLocale($tmp_locale_original);    /* by access3000 */
 
         return $this->getData();
     }
