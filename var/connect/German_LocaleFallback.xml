@@ -16,9 +16,11 @@ Complemento de paquetes de idioma para Magento Commerce
 * Definido además de la configuración regional un idioma de segunda opción</description>
    <license>OSL</license>
    <license_uri>http://www.opensource.org/licenses/osl-3.0.php</license_uri>
-   <version>0.5.0</version>
+   <version>0.5.1</version>
    <stability>stable</stability>
-   <notes>none/keine</notes>
+   <notes>Custom language packages can now easily be included by installing them with a local as &quot;de_ZZ&quot;, &quot;en_ZZ&quot;, &quot;es_ZZ&quot;, &quot;fr_ZZ&quot; and so forth, and any entry in it will be considered before translation from the main package.
+
+Benutzerdefinierte Sprachpakete können jetzt einfach eingebunden werden durch die Installation mit einem &quot;locale&quot; wie &quot;de_ZZ&quot;, &quot;en_ZZ&quot;, &quot;es_ZZ&quot;, &quot;fr_ZZ&quot; usw., und jeder Eintrag in diesem Paket wird vor der Übersetzung aus dem Hauptpaket berücksichtigt.</notes>
    <authors>
       <name>
          <name>Manfred Worm Schäfer</name>
@@ -85,7 +87,7 @@ Complemento de paquetes de idioma para Magento Commerce
          <path>fr_FR/German_LocaleFallback.csv</path>
          <path>it_IT/German_LocaleFallback.csv</path>
          <path>pt_PT/German_LocaleFallback.csv</path>
-         <path>var/package/Delete_EmailTemplates_en_US-1.2.0.xml</path>
+         <path>var/package/Delete_EmailTemplates_en_US-1.3.0.xml</path>
       </path>
       <type>
          <type>file</type>

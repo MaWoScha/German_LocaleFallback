@@ -83,3 +83,7 @@ Setting options expanded.
 
 Einstellungsmöglichkeiten erweitert.
 - Die Idee ist, kundenspezifische Sprachpakete zu haben, die neben dem Hauptpaket (bsp. de_DE) nur wenige Einträge haben und deshalb leicht zu warten sind und über die locale "de_ZZ", "en_ZZ", "es_ZZ", "fr_ZZ und so weiter einzubinden sind.
+
+v0.5.1
+
+- Die Datei "var/package/Delete_EmailTemplates_en_US-1.3.0.xml" berücksichtigt die dazugekommene englischsprachige E-Mail-Vorlage "admin_new_user_notification.html".

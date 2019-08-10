@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+    <name>German_LocaleFallback</name>
+    <version>0.5.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>German Modules - LocaleFallback Extension</summary>
+    <description>Complement to language packages for Magento Commerce&#xD;
+* Defines a fallback language additional to the locale&#xD;
+&#xD;
+Erg&#xE4;nzung zu Sprachpaketen f&#xFC;r Magento Commerce:&#xD;
+* Definiert zu der Sprachumgebung eine Ausweichsprache&#xD;
+&#xD;
+Complemento de paquetes de idioma para Magento Commerce&#xD;
+* Definido adem&#xE1;s de la configuraci&#xF3;n regional un idioma de segunda opci&#xF3;n</description>
+    <notes>Custom language packages can now easily be included by installing them with a local as "de_ZZ", "en_ZZ", "es_ZZ", "fr_ZZ" and so forth, and any entry in it will be considered before translation from the main package.&#xD;
+&#xD;
+Benutzerdefinierte Sprachpakete k&#xF6;nnen jetzt einfach eingebunden werden durch die Installation mit einem "locale" wie "de_ZZ", "en_ZZ", "es_ZZ", "fr_ZZ" usw., und jeder Eintrag in diesem Paket wird vor der &#xDC;bersetzung aus dem Hauptpaket ber&#xFC;cksichtigt.</notes>
+    <authors><author><name>Manfred Worm Sch&#xE4;fer</name><user>MaWoScha</user><email>manfredwormschaefer@gmail.com</email></author></authors>
+    <date>2017-12-29</date>
+    <time>01:47:31</time>
+    <contents><target name="magecommunity"><dir name="German"><dir name="LocaleFallback"><dir name="Block"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Fieldset"><file name="Extensionslist.php" hash="4edbc7e9d9ced07ca79a50ef97e454f9"/><file name="Instructions.php" hash="545543ec23be61b3022e5dd7176bef12"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="eac590ebf5655371f87012bd30d08e02"/></dir><dir name="Model"><file name="Locale.php" hash="bb057f9e7b311e10ffd344e1088b53f2"/><file name="Observer.php" hash="de84a68623a5ef8df7500de48a2c8a24"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Locale.php" hash="f05fafe76e16d658ea7af4aa219ece32"/></dir></dir></dir><file name="Translate.php" hash="ab6cdac82ac0d966c81730c92de615b6"/></dir><dir name="etc"><file name="config.xml" hash="e6d73ae32185b7336c25626c45fc69d4"/><file name="system.xml" hash="13bb6b43512e0112c14d0ff3a9b521b4"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="German_LocaleFallback.xml" hash="2b7c96a434582aac6b3dff76b270a632"/></dir></target><target name="magelocale"><dir name="de_DE"><file name="German_LocaleFallback.csv" hash="aa51169d67d2b0887b7d649cfcbd8dfa"/></dir><dir name="en_US"><file name="German_LocaleFallback.csv" hash="2fe2b0c234c01271b2766668e69a47aa"/></dir><dir name="es_ES"><file name="German_LocaleFallback.csv" hash="ac116d2682a7987e453cb96a51cbdafa"/></dir><dir name="fr_FR"><file name="German_LocaleFallback.csv" hash="004f96b6eddb959bdb3f580ca64c6d27"/></dir><dir name="it_IT"><file name="German_LocaleFallback.csv" hash="9e10873ddc79400abc5a916c7575f735"/></dir><dir name="pt_PT"><file name="German_LocaleFallback.csv" hash="8b114bb77359452ff23c6865bda01362"/></dir></target><target name="mage"><dir name="var"><dir name="package"><file name="Delete_EmailTemplates_en_US-1.2.0.xml" hash="34ae56d7f112c284bdc4c4fb8eafd962"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
