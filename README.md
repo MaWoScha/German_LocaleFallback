@@ -28,6 +28,7 @@ sind es nicht; wenn Sie also einen Eintrag in de_CH nicht finden, schauen Sie in
 * - [German_LocalePack_de_ZZ](https://github.com/MaWoScha/German_LocalePack_de_ZZ)
 * [German_LocalePack_en_US](https://github.com/MaWoScha/German_LocalePack_en_US)
 * - [German_LocalePack_en_GB](https://github.com/MaWoScha/German_LocalePack_en_GB)
+* - [German_LocalePack_en_ZA](https://github.com/MaWoScha/German_LocalePack_en_ZA)
 * - [German_LocalePack_en_ZZ](https://github.com/MaWoScha/German_LocalePack_en_ZZ)
 * [German_LocalePack_es_ES](https://github.com/MaWoScha/German_LocalePack_es_ES)
 * - [German_LocalePack_es_ZZ](https://github.com/MaWoScha/German_LocalePack_es_ZZ)
