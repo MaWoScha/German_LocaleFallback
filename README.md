@@ -19,6 +19,29 @@ sind es nicht; wenn Sie also einen Eintrag in de_CH nicht finden, schauen Sie in
 * http://www.integer-net.de/magento-at-landerversion-mit-fallback-modus-fur-ubersetzungen/ (German)
 * http://blog.siempro.co/?p=105&lang=en (English, German, Spanish)
 
+# Language packs available
+
+* [German_LocalePack_de_DE](https://github.com/MaWoScha/German_LocalePack_de_DE)
+* - [German_LocalePack_de_AT](https://github.com/MaWoScha/German_LocalePack_de_AT)
+* - [German_LocalePack_de_CH](https://github.com/MaWoScha/German_LocalePack_de_CH)
+* - [German_LocalePack_de_DE_DU](https://github.com/MaWoScha/German_LocalePack_de_DE_DU)
+* - [German_LocalePack_de_ZZ](https://github.com/MaWoScha/German_LocalePack_de_ZZ)
+* [German_LocalePack_en_US](https://github.com/MaWoScha/German_LocalePack_en_US)
+* - [German_LocalePack_en_GB](https://github.com/MaWoScha/German_LocalePack_en_GB)
+* - [German_LocalePack_en_ZZ](https://github.com/MaWoScha/German_LocalePack_en_ZZ)
+* [German_LocalePack_es_ES](https://github.com/MaWoScha/German_LocalePack_es_ES)
+* - [German_LocalePack_es_ZZ](https://github.com/MaWoScha/German_LocalePack_es_ZZ)
+* [German_LocalePack_fa_IR](https://github.com/MaWoScha/German_LocalePack_fa_IR)
+* [German_LocalePack_fr_FR](https://github.com/MaWoScha/German_LocalePack_fr_FR)
+* - [German_LocalePack_fr_CA](https://github.com/MaWoScha/German_LocalePack_fr_CA)
+* - [German_LocalePack_fr_ZZ](https://github.com/MaWoScha/German_LocalePack_fr_ZZ)
+* [German_LocalePack_id_ID](https://github.com/MaWoScha/German_LocalePack_id_ID)
+* [German_LocalePack_it_IT](https://github.com/MaWoScha/German_LocalePack_it_IT)
+* [German_LocalePack_nl_NL](https://github.com/MaWoScha/German_LocalePack_nl_NL)
+* [German_LocalePack_pt_PT](https://github.com/MaWoScha/German_LocalePack_pt_PT)
+* - [German_LocalePack_pt_BR](https://github.com/MaWoScha/German_LocalePack_pt_BR)
+* - [German_LocalePack_pt_ZZ](https://github.com/MaWoScha/German_LocalePack_pt_ZZ)
+
 # Version history
 
 v0.1.0
