@@ -2,8 +2,8 @@
 /**
  * @category  German
  * @package   German_LocaleFallback
- * @authors   MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
- * @developer MaWoScha <mawoscha@siempro.co, http://www.siempro.co/>, Bastian Ike <b-ike@b-ike.de>
+ * @authors   MaWoScha, Bastian Ike <b-ike@b-ike.de>
+ * @developer MaWoScha, Bastian Ike <b-ike@b-ike.de>
  * @version   0.2.0
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @source    http://github.com/magento-hackathon/Hackathon_LocaleFallback
